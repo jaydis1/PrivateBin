@@ -3,12 +3,11 @@
     "%s is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted %sin the browser%s using 256 bits AES.": "%s adalah sebuah pastebin online sumber terbuka dan minimalis, dimana servernya tersebut tidak punya pengetahuan tentang data yang ditempelkan. Data tersebut di enkrip/dekrip %sdi dalam browser%s menggunakan metode enkrip AES 256 bit.",
     "More information on the <a href=\"https://privatebin.info/\">project page</a>.": "Infomasi lebih lanjut pada <a href=\"https://privatebin.info/\">halaman proyek</a>.",
     "Because ignorance is bliss": "Karena ketidaktahuan adalah kebahagiaan, gitu loh",
+    "en": "id",
     "Paste does not exist, has expired or has been deleted.": "Paste tidak ada, telah kedaluwarsa atau telah dihapus.",
     "%s requires php %s or above to work. Sorry.": "%s memerlukan php %s atau versi diatasnya untuk dapat dijalankan. Maaf.",
     "%s requires configuration section [%s] to be present in configuration file.": "%s membutuhkan bagian konfigurasi [%s] untuk ada di file konfigurasi.",
     "Please wait %d seconds between each post.": [
-        "Silahkan menunggu %d detik antara masing-masing postingan.",
-        "Silahkan menunggu %d detik antara masing-masing postingan.",
         "Silahkan menunggu %d detik antara masing-masing postingan.",
         "Silahkan menunggu %d detik antara masing-masing postingan.",
         "Silahkan menunggu %d detik antara masing-masing postingan.",
@@ -39,13 +38,9 @@
         "%d detik",
         "%d detik",
         "%d detik",
-        "%d detik",
-        "%d detik",
         "%d detik"
     ],
     "%d minutes": [
-        "%d menit",
-        "%d menit",
         "%d menit",
         "%d menit",
         "%d menit",
@@ -55,13 +50,9 @@
         "%d jam",
         "%d jam",
         "%d jam",
-        "%d jam",
-        "%d jam",
         "%d jam"
     ],
     "%d days": [
-        "%d hari",
-        "%d hari",
         "%d hari",
         "%d hari",
         "%d hari",
@@ -71,21 +62,15 @@
         "%d minggu",
         "%d minggu",
         "%d minggu",
-        "%d minggu",
-        "%d minggu",
         "%d minggu"
     ],
     "%d months": [
         "%d bulan",
         "%d bulan",
         "%d bulan",
-        "%d bulan",
-        "%d bulan",
         "%d bulan"
     ],
     "%d years": [
-        "%d tahun",
-        "%d tahun",
         "%d tahun",
         "%d tahun",
         "%d tahun",
@@ -97,13 +82,9 @@
         "Dokumen ini kadaluarsa dalam %d detik.",
         "Dokumen ini kadaluarsa dalam %d detik.",
         "Dokumen ini kadaluarsa dalam %d detik.",
-        "Dokumen ini kadaluarsa dalam %d detik.",
-        "Dokumen ini kadaluarsa dalam %d detik.",
         "Dokumen ini kadaluarsa dalam %d detik."
     ],
     "This document will expire in %d minutes.": [
-        "Dokumen ini akan kadaluarsa dalam %d menit.",
-        "Dokumen ini akan kadaluarsa dalam %d menit.",
         "Dokumen ini akan kadaluarsa dalam %d menit.",
         "Dokumen ini akan kadaluarsa dalam %d menit.",
         "Dokumen ini akan kadaluarsa dalam %d menit.",
@@ -113,21 +94,15 @@
         "Dokumen ini akan kadaluarsa dalam %d jam.",
         "Dokumen ini akan kadaluarsa dalam %d jam.",
         "Dokumen ini akan kadaluarsa dalam %d jam.",
-        "Dokumen ini akan kadaluarsa dalam %d jam.",
-        "Dokumen ini akan kadaluarsa dalam %d jam.",
         "Dokumen ini akan kadaluarsa dalam %d jam."
     ],
     "This document will expire in %d days.": [
         "Dokumen ini akan kadaluarsa dalam %d hari.",
         "Dokumen ini akan kadaluarsa dalam %d hari.",
         "Dokumen ini akan kadaluarsa dalam %d hari.",
-        "Dokumen ini akan kadaluarsa dalam %d hari.",
-        "Dokumen ini akan kadaluarsa dalam %d hari.",
         "Dokumen ini akan kadaluarsa dalam %d hari."
     ],
     "This document will expire in %d months.": [
-        "Dokumen ini akan kadaluarsa dalam %d bulan.",
-        "Dokumen ini akan kadaluarsa dalam %d bulan.",
         "Dokumen ini akan kadaluarsa dalam %d bulan.",
         "Dokumen ini akan kadaluarsa dalam %d bulan.",
         "Dokumen ini akan kadaluarsa dalam %d bulan.",

@@ -7,7 +7,7 @@
  * @link      https://github.com/PrivateBin/PrivateBin
  * @copyright 2012 Sébastien SAUVAGE (sebsauvage.net)
  * @license   https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License
- * @version   1.6.0
+ * @version   1.5.1
  */
 
 namespace PrivateBin;
@@ -28,14 +28,14 @@ class Controller
      *
      * @const string
      */
-    const VERSION = '1.6.0';
+    const VERSION = '1.5.1';
 
     /**
      * minimal required PHP version
      *
      * @const string
      */
-    const MIN_PHP_VERSION = '7.3.0';
+    const MIN_PHP_VERSION = '5.6.0';
 
     /**
      * show the same error message if the paste expired or does not exist
@@ -411,7 +411,6 @@ class Controller
         $page->assign('EXPIREDEFAULT', $this->_conf->getKey('default', 'expire'));
         $page->assign('URLSHORTENER', $this->_conf->getKey('urlshortener'));
         $page->assign('QRCODE', $this->_conf->getKey('qrcode'));
-        $page->assign('EMAIL', $this->_conf->getKey('email'));
         $page->assign('HTTPWARNING', $this->_conf->getKey('httpwarning'));
         $page->assign('HTTPSLINK', 'https://' . $this->_request->getHost() . $this->_request->getRequestUri());
         $page->assign('COMPRESSION', $this->_conf->getKey('compression'));
@@ -426,13 +425,10 @@ class Controller
      */
     private function _jsonld($type)
     {
-        if (!in_array($type, array(
-            'comment',
-            'commentmeta',
-            'paste',
-            'pastemeta',
-            'types',
-        ))) {
+        if (
+            $type !== 'paste' && $type !== 'comment' &&
+            $type !== 'pastemeta' && $type !== 'commentmeta'
+        ) {
             $type = '';
         }
         $content = '{}';
@@ -442,13 +438,6 @@ class Controller
                 '?jsonld=',
                 $this->_urlBase . '?jsonld=',
                 file_get_contents($file)
-            );
-        }
-        if ($type === 'types') {
-            $content = str_replace(
-                implode('", "', array_keys($this->_conf->getDefaults()['expire_options'])),
-                implode('", "', array_keys($this->_conf->getSection('expire_options'))),
-                $content
             );
         }
 

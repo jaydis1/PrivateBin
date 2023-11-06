@@ -65,10 +65,6 @@ languageselection = false
 ; It works both when a new paste is created and when you view a paste.
 ; qrcode = true
 
-; (optional) Let users send an email sharing the paste URL with one click.
-; It works both when a new paste is created and when you view a paste.
-; email = true
-
 ; (optional) IP based icons are a weak mechanism to detect if a comment was from
 ; a different user when the same username was used in a comment. It might get
 ; used to get the IP of a comment poster if the server salt is leaked and a
@@ -233,19 +229,6 @@ dir = PATH "data"
 ;bucket = "my-bucket"
 ;accesskey = "access key id"
 ;secretkey = "secret access key"
-
-;[model]
-; example of S3 configuration for AWS using its SDK default credential provider chain
-; if relying on environment variables, the AWS SDK will look for the following:
-; - AWS_ACCESS_KEY_ID
-; - AWS_SECRET_ACCESS_KEY
-; - AWS_SESSION_TOKEN (if needed)
-; for more details, see https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials.html#default-credential-chain 
-;class = S3Storage
-;[model_options]
-;region = "eu-central-1"
-;version = "latest"
-;bucket = "my-bucket"
 
 [yourls]
 ; When using YOURLS as a "urlshortener" config item:

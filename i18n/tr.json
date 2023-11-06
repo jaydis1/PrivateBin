@@ -3,12 +3,11 @@
     "%s is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted %sin the browser%s using 256 bits AES.": "%s sunucunun burada paylaştığınız veriyi görmediği, minimal, açık kaynak bir pastebindir. Veriler tarayıcıda 256 bit AES kullanılarak şifrelenir/çözülür.",
     "More information on the <a href=\"https://privatebin.info/\">project page</a>.": "Daha fazla bilgi için <a href=\"https://privatebin.info/\">proje sayfası</a>'na göz atabilirsiniz.",
     "Because ignorance is bliss": "Çünkü, cehalet mutluluktur",
+    "en": "tr",
     "Paste does not exist, has expired or has been deleted.": "Paste does not exist, has expired or has been deleted.",
     "%s requires php %s or above to work. Sorry.": "%s PHP %s veya daha üstünü gerektirir.",
     "%s requires configuration section [%s] to be present in configuration file.": "%s konfigürasyon bölümünün [%s] bulunmasını gerektir.",
     "Please wait %d seconds between each post.": [
-        "Lütfen paylaşımlar arasında %d saniye bekleyiniz.",
-        "Lütfen paylaşımlar arasında %d saniye bekleyiniz.",
         "Lütfen paylaşımlar arasında %d saniye bekleyiniz.",
         "Lütfen paylaşımlar arasında %d saniye bekleyiniz.",
         "Lütfen paylaşımlar arasında %d saniye bekleyiniz.",
@@ -39,13 +38,9 @@
         "%d saniye",
         "%d saniye",
         "%d saniye",
-        "%d saniye",
-        "%d saniye",
         "%d saniye"
     ],
     "%d minutes": [
-        "%d dakika",
-        "%d dakika",
         "%d dakika",
         "%d dakika",
         "%d dakika",
@@ -55,13 +50,9 @@
         "%d saat",
         "%d saat",
         "%d saat",
-        "%d saat",
-        "%d saat",
         "%d saat"
     ],
     "%d days": [
-        "%d gün",
-        "%d gün",
         "%d gün",
         "%d gün",
         "%d gün",
@@ -71,21 +62,15 @@
         "%d hafta",
         "%d haftalar",
         "%d hafta",
-        "%d hafta",
-        "%d hafta",
         "%d hafta"
     ],
     "%d months": [
         "%d ay",
         "%d ay",
         "%d ay",
-        "%d ay",
-        "%d ay",
         "%d ay"
     ],
     "%d years": [
-        "%d yıl",
-        "%d yıl",
         "%d yıl",
         "%d yıl",
         "%d yıl",
@@ -97,13 +82,9 @@
         "Bu belge %d saniyede silinecektir.",
         "Bu belge %d saniyede silinecektir.",
         "Bu belge %d saniyede silinecektir.",
-        "Bu belge %d saniyede silinecektir.",
-        "Bu belge %d saniyede silinecektir.",
         "Bu belge %d saniyede silinecektir."
     ],
     "This document will expire in %d minutes.": [
-        "Bu belge %d dakikada silinecektir.",
-        "Bu belge %d dakikada silinecektir.",
         "Bu belge %d dakikada silinecektir.",
         "Bu belge %d dakikada silinecektir.",
         "Bu belge %d dakikada silinecektir.",
@@ -113,21 +94,15 @@
         "Bu belge %d saatte silinecektir.",
         "Bu belge %d saatte silinecektir.",
         "Bu belge %d saatte silinecektir.",
-        "Bu belge %d saatte silinecektir.",
-        "Bu belge %d saatte silinecektir.",
         "Bu belge %d saatte silinecektir."
     ],
     "This document will expire in %d days.": [
         "Bu belge %d günde silinecektir.",
         "Bu belge %d günde silinecektir.",
         "Bu belge %d günde silinecektir.",
-        "Bu belge %d günde silinecektir.",
-        "Bu belge %d günde silinecektir.",
         "Bu belge %d günde silinecektir."
     ],
     "This document will expire in %d months.": [
-        "Bu belge %d ayda silinecektir.",
-        "Bu belge %d ayda silinecektir.",
         "Bu belge %d ayda silinecektir.",
         "Bu belge %d ayda silinecektir.",
         "Bu belge %d ayda silinecektir.",

@@ -4,7 +4,7 @@ $isCpct = substr($template, 9, 8) === '-compact';
 $isDark = substr($template, 9, 5) === '-dark';
 $isPage = substr($template, -5) === '-page';
 ?><!DOCTYPE html>
-<html lang="<?php echo I18n::getLanguage(); ?>"<?php echo I18n::isRtl() ? ' dir="rtl"' : ''; ?>>
+<html lang="<?php echo I18n::_('en'); ?>">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="Content-Security-Policy" content="<?php echo I18n::encode($CSPHEADER); ?>">
@@ -42,7 +42,7 @@ if ($SYNTAXHIGHLIGHTING) :
 endif;
 ?>
 		<noscript><link type="text/css" rel="stylesheet" href="css/noscript.css" /></noscript>
-		<script type="text/javascript" data-cfasync="false" src="js/jquery-3.7.0.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous"></script>
+		<script type="text/javascript" data-cfasync="false" src="js/jquery-3.6.1.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous"></script>
 <?php
 if ($QRCODE) :
 ?>
@@ -71,9 +71,9 @@ if ($MARKDOWN) :
 <?php
 endif;
 ?>
-		<script type="text/javascript" data-cfasync="false" src="js/purify-3.0.4.js" integrity="sha512-N7H+3ylaOUeKuTX57cZoa42hqaG5w1rchG/IP9+BHd48W/vESgPDpb5QuDqzJE1dZhrGVCQgU8peIQGHmdGFhQ==" crossorigin="anonymous"></script>
+		<script type="text/javascript" data-cfasync="false" src="js/purify-2.4.6.js" integrity="sha512-+jcx+EqNbaFT4OHS86zGwU1SNAAZ7hG2pJlwMpXoe9AvTp37BrXMQ29g2GhdyQHTvYWaNlTQIkWXYM0Lvt8GiQ==" crossorigin="anonymous"></script>
 		<script type="text/javascript" data-cfasync="false" src="js/legacy.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-LYos+qXHIRqFf5ZPNphvtTB0cgzHUizu2wwcOwcwz/VIpRv9lpcBgPYz4uq6jx0INwCAj6Fbnl5HoKiLufS2jg==" crossorigin="anonymous"></script>
-		<script type="text/javascript" data-cfasync="false" src="js/privatebin.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-ykPMZuZDmyGNik7G5dIeqE/+CJ79OKZ0XzPPVWUwAzp+k8PQoP66J8F8zYtI53dM4ITLojkNKrv4vTv6E3bzFQ==" crossorigin="anonymous"></script>
+		<script type="text/javascript" data-cfasync="false" src="js/privatebin.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-ST1B/QBH9m/TImh2pzKU88qbgwqto4N34X8bnn9+Iuye3x2pTb3aMiX5gU4gh15T7HCTw2jehB9+BtC6a/M81A==" crossorigin="anonymous"></script>
 		<!-- icon -->
 		<link rel="apple-touch-icon" href="<?php echo I18n::encode($BASEPATH); ?>img/apple-touch-icon.png" sizes="180x180" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
@@ -144,7 +144,6 @@ if ($QRCODE) :
 		</div>
 <?php
 endif;
-if ($EMAIL) :
 ?>
 		<div id="emailconfirmmodal" tabindex="-1" class="modal fade" aria-labelledby="emailconfirmmodalTitle" role="dialog" aria-hidden="true">
 			<div class="modal-dialog" role="document">
@@ -168,9 +167,6 @@ if ($EMAIL) :
 				</div>
 			</div>
 		</div>
-<?php
-endif;
-?>
 		<nav class="navbar navbar-<?php echo $isDark ? 'inverse' : 'default'; ?> navbar-<?php echo $isCpct ? 'fixed' : 'static'; ?>-top"><?php
 if ($isCpct) :
 ?><div class="container"><?php
@@ -220,15 +216,10 @@ endif;
 						<button id="downloadtextbutton" type="button" class="hidden btn btn-<?php echo $isDark ? 'warning' : 'default'; ?> navbar-btn">
 							<span class="glyphicon glyphicon glyphicon-download-alt" aria-hidden="true"></span> <?php echo I18n::_('Save paste'), PHP_EOL; ?>
 						</button>
-<?php
-if ($EMAIL) :
-?>
-
 						<button id="emaillink" type="button" class="hidden btn btn-<?php echo $isDark ? 'warning' : 'default'; ?> navbar-btn">
 							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <?php echo I18n::_('Email'), PHP_EOL; ?>
 						</button>
 <?php
-endif;
 if ($QRCODE) :
 ?>
 						<button id="qrcodelink" type="button" data-toggle="modal" data-target="#qrcodemodal" class="hidden btn btn-<?php echo $isDark ? 'warning' : 'default'; ?> navbar-btn">
@@ -588,7 +579,7 @@ endif;
 			</section>
 			<footer class="container">
 				<div class="row">
-					<h4 class="col-md-5 col-xs-8"><?php echo I18n::_($NAME); ?> <small>- <?php echo I18n::_('Because ignorance is bliss'); ?></small></h4>
+					<h4 class="col-md-5 col-xs-8"><?php echo I18n::_($NAME); ?> </h4>
 					<p class="col-md-1 col-xs-4 text-center"><?php echo $VERSION; ?></p>
 					<p id="aboutbox" class="col-md-6 col-xs-12">
 						<?php echo sprintf(

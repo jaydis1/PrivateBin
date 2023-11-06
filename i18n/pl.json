@@ -3,13 +3,12 @@
     "%s is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted %sin the browser%s using 256 bits AES.": "%s jest minimalistycznym, otwartoźródłowym serwisem typu pastebin, w którym serwer nie ma jakichkolwiek informacji o tym, co jest wklejane. Dane są szyfrowane i deszyfrowane %sw przeglądarce%s z użyciem 256-bitowego klucza AES.",
     "More information on the <a href=\"https://privatebin.info/\">project page</a>.": "Więcej informacji na <a href=\"https://privatebin.info/\">stronie projektu</a>.",
     "Because ignorance is bliss": "Ponieważ ignorancja jest cnotą",
+    "en": "pl",
     "Paste does not exist, has expired or has been deleted.": "Wklejka nie istnieje, wygasła albo została usunięta.",
     "%s requires php %s or above to work. Sorry.": "%s wymaga PHP w wersji %s lub nowszej. Przykro mi.",
     "%s requires configuration section [%s] to be present in configuration file.": "%s wymaga obecności sekcji [%s] w pliku konfiguracyjnym.",
     "Please wait %d seconds between each post.": [
         "Poczekaj %d sekundę pomiędzy każdą wklejką.",
-        "Poczekaj %d sekund pomiędzy każdą wklejką.",
-        "Poczekaj %d sekund pomiędzy każdą wklejką.",
         "Poczekaj %d sekund pomiędzy każdą wklejką.",
         "Poczekaj %d sekund pomiędzy każdą wklejką.",
         "Poczekaj %d sekund pomiędzy każdą wklejką."
@@ -39,13 +38,9 @@
         "%d second",
         "%d second",
         "%d second",
-        "%d second",
-        "%d second",
         "%d second"
     ],
     "%d minutes": [
-        "%d minut",
-        "%d minut",
         "%d minut",
         "%d minut",
         "%d minut",
@@ -55,13 +50,9 @@
         "%d godzina",
         "%d godzina",
         "%d godzinę",
-        "%d godzinę",
-        "%d godzinę",
         "%d godzinę"
     ],
     "%d days": [
-        "%d dzień",
-        "%d dzień",
         "%d dzień",
         "%d dzień",
         "%d dzień",
@@ -71,21 +62,15 @@
         "%d tydzień",
         "%d tydzień",
         "%d tydzień",
-        "%d tydzień",
-        "%d tydzień",
         "%d tydzień"
     ],
     "%d months": [
         "%d miesiąc",
         "%d miesiąc",
         "%d miesiąc",
-        "%d miesiąc",
-        "%d miesiąc",
         "%d miesiąc"
     ],
     "%d years": [
-        "%d rok",
-        "%d rok",
         "%d rok",
         "%d rok",
         "%d rok",
@@ -97,14 +82,10 @@
         "Ten dokument wygaśnie za %d sekundę.",
         "Ten dokument wygaśnie za %d sekund.",
         "Ten dokument wygaśnie za %d sekund.",
-        "Ten dokument wygaśnie za %d sekund.",
-        "Ten dokument wygaśnie za %d sekund.",
         "Ten dokument wygaśnie za %d sekund."
     ],
     "This document will expire in %d minutes.": [
         "Ten dokument wygaśnie za %d minutę.",
-        "Ten dokument wygaśnie za %d minut.",
-        "Ten dokument wygaśnie za %d minut.",
         "Ten dokument wygaśnie za %d minut.",
         "Ten dokument wygaśnie za %d minut.",
         "Ten dokument wygaśnie za %d minut."
@@ -113,22 +94,16 @@
         "Ten dokument wygaśnie za godzinę.",
         "Ten dokument wygaśnie za %d godzin.",
         "Ten dokument wygaśnie za %d godzin.",
-        "Ten dokument wygaśnie za %d godzin.",
-        "Ten dokument wygaśnie za %d godzin.",
         "Ten dokument wygaśnie za %d godzin."
     ],
     "This document will expire in %d days.": [
         "Ten dokument wygaśnie za %d dzień.",
         "Ten dokument wygaśnie za %d dni.",
         "Ten dokument wygaśnie za %d dni.",
-        "Ten dokument wygaśnie za %d dni.",
-        "Ten dokument wygaśnie za %d dni.",
         "Ten dokument wygaśnie za %d dni."
     ],
     "This document will expire in %d months.": [
         "Ten dokument wygaśnie za miesiąc.",
-        "Ten dokument wygaśnie za %d miesięcy.",
-        "Ten dokument wygaśnie za %d miesięcy.",
         "Ten dokument wygaśnie za %d miesięcy.",
         "Ten dokument wygaśnie za %d miesięcy.",
         "Ten dokument wygaśnie za %d miesięcy."

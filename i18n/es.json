@@ -3,13 +3,12 @@
     "%s is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted %sin the browser%s using 256 bits AES.": "%s es un \"pastebin\" en línea minimalista de código abierto, donde el servidor no tiene ningún conocimiento de los datos guardados. Los datos son cifrados/descifrados %sen el navegador%s usando 256 bits AES.",
     "More information on the <a href=\"https://privatebin.info/\">project page</a>.": "Más información en la <a href=\"https://privatebin.info/\">página del proyecto</a>.",
     "Because ignorance is bliss": "Porque la ignorancia es felicidad",
+    "en": "es",
     "Paste does not exist, has expired or has been deleted.": "El \"paste\" no existe, ha caducado o ha sido eliminado.",
     "%s requires php %s or above to work. Sorry.": "%s requiere php %s o superior para funcionar. Lo siento.",
     "%s requires configuration section [%s] to be present in configuration file.": "%s requiere que la sección de configuración [%s] esté presente en el archivo de configuración.",
     "Please wait %d seconds between each post.": [
         "Por favor espere %d segundo entre cada publicación.",
-        "Por favor espere %d segundos entre cada publicación.",
-        "Por favor espere %d segundos entre cada publicación.",
         "Por favor espere %d segundos entre cada publicación.",
         "Por favor espere %d segundos entre cada publicación.",
         "Por favor espere %d segundos entre cada publicación."
@@ -39,14 +38,10 @@
         "%d segundo",
         "%d segundos",
         "%d segundos",
-        "%d segundos",
-        "%d segundos",
         "%d segundos"
     ],
     "%d minutes": [
         "%d minuto",
-        "%d minutos",
-        "%d minutos",
         "%d minutos",
         "%d minutos",
         "%d minutos"
@@ -55,14 +50,10 @@
         "%d hora",
         "%d horas",
         "%d horas",
-        "%d horas",
-        "%d horas",
         "%d horas"
     ],
     "%d days": [
         "%d día",
-        "%d días",
-        "%d días",
         "%d días",
         "%d días",
         "%d días"
@@ -71,22 +62,16 @@
         "%d semana",
         "%d semanas",
         "%d semanas",
-        "%d semanas",
-        "%d semanas",
         "%d semanas"
     ],
     "%d months": [
         "%d mes",
         "%d meses",
-        "%d meses",
-        "%d meses",
-        "%d meses",
+        "%d minutos",
         "%d meses"
     ],
     "%d years": [
         "%d año",
-        "%d años",
-        "%d años",
         "%d años",
         "%d años",
         "%d años"
@@ -97,15 +82,11 @@
         "Este documento caducará en un segundo.",
         "Este documento caducará en %d segundos.",
         "Este documento caducará en %d segundos",
-        "Este documento caducará en %d segundos",
-        "Este documento caducará en %d segundos",
         "Este documento caducará en %d segundos"
     ],
     "This document will expire in %d minutes.": [
         "Este documento caducará en un minuto.",
         "Este documento caducará en %d minutos.",
-        "Este documento caducará en %d minutos",
-        "Este documento caducará en %d minutos",
         "Este documento caducará en %d minutos",
         "Este documento caducará en %d minutos"
     ],
@@ -113,23 +94,17 @@
         "Este documento caducará en una hora.",
         "Este documento caducará en %d horas.",
         "Este documento caducará en %d horas",
-        "Este documento caducará en %d horas",
-        "Este documento caducará en %d horas",
         "Este documento caducará en %d horas"
     ],
     "This document will expire in %d days.": [
         "Este documento caducará en un día.",
         "Este documento caducará en %d días.",
         "Este documento caducará en %d días",
-        "Este documento caducará en %d días",
-        "Este documento caducará en %d días",
         "Este documento caducará en %d días"
     ],
     "This document will expire in %d months.": [
         "Este documento caducará en un mes.",
         "Este documento caducará en %d meses.",
-        "Este documento caducará en %d meses",
-        "Este documento caducará en %d meses",
         "Este documento caducará en %d meses",
         "Este documento caducará en %d meses"
     ],
@@ -212,7 +187,7 @@
     "URL shortener may expose your decrypt key in URL.": "El acortador de URL puede exponer su clave de descifrado en el URL.",
     "Save paste": "Guardar \"paste\"",
     "Your IP is not authorized to create pastes.": "Tu IP no está autorizada para crear contenido.",
-    "Trying to shorten a URL that isn't pointing at our instance.": "Intentando acortar una URL que no apunta a nuestra instancia.",
+    "Trying to shorten a URL that isn't pointing at our instance.": "Trying to shorten a URL that isn't pointing at our instance.",
     "Error calling YOURLS. Probably a configuration issue, like wrong or missing \"apiurl\" or \"signature\".": "Error calling YOURLS. Probably a configuration issue, like wrong or missing \"apiurl\" or \"signature\".",
     "Error parsing YOURLS response.": "Error parsing YOURLS response."
 }

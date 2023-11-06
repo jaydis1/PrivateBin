@@ -6,7 +6,7 @@
  * @see       {@link https://github.com/PrivateBin/PrivateBin}
  * @copyright 2012 Sébastien SAUVAGE ({@link http://sebsauvage.net})
  * @license   {@link https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License}
- * @version   1.6.0
+ * @version   1.5.1
  * @name      PrivateBin
  * @namespace
  */
@@ -627,7 +627,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
          * @prop   {string[]}
          * @readonly
          */
-        const supportedLanguages = ['ar', 'bg', 'ca', 'co', 'cs', 'de', 'el', 'es', 'et', 'fi', 'fr', 'he', 'hu', 'id', 'it', 'ja', 'jbo', 'lt', 'no', 'nl', 'pl', 'pt', 'oc', 'ru', 'sk', 'sl', 'th', 'tr', 'uk', 'zh'];
+        const supportedLanguages = ['bg', 'ca', 'co', 'cs', 'de', 'el', 'es', 'et', 'fi', 'fr', 'he', 'hu', 'id', 'it', 'jbo', 'lt', 'no', 'nl', 'pl', 'pt', 'oc', 'ru', 'sk', 'sl', 'th', 'tr', 'uk', 'zh'];
 
         /**
          * built in language
@@ -791,18 +791,6 @@ jQuery.PrivateBin = (function($, RawDeflate) {
         };
 
         /**
-         * get currently loaded language
-         *
-         * @name   I18n.getLanguage
-         * @function
-         * @return {string}
-         */
-        me.getLanguage = function()
-        {
-            return language;
-        };
-
-        /**
          * per language functions to use to determine the plural form
          *
          * @see    {@link https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html}
@@ -814,8 +802,6 @@ jQuery.PrivateBin = (function($, RawDeflate) {
         me.getPluralForm = function(n) {
             switch (language)
             {
-                case 'ar':
-                    return n === 0 ? 0 : (n === 1 ? 1 : (n === 2 ? 2 : (n % 100 >= 3 && n % 100 <= 10 ? 3 : (n % 100 >= 11 ? 4 : 5))));
                 case 'cs':
                 case 'sk':
                     return n === 1 ? 0 : (n >= 2 && n <= 4 ? 1 : 2);
@@ -828,7 +814,6 @@ jQuery.PrivateBin = (function($, RawDeflate) {
                 case 'he':
                     return n === 1 ? 0 : (n === 2 ? 1 : ((n < 0 || n > 10) && (n % 10 === 0) ? 2 : 3));
                 case 'id':
-                case 'ja':
                 case 'jbo':
                 case 'th':
                     return 0;
@@ -859,10 +844,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
 
             // auto-select language based on browser settings
             if (newLanguage.length === 0) {
-                newLanguage = (navigator.language || navigator.userLanguage || 'en');
-                if (newLanguage.indexOf('-') > 0) {
-                    newLanguage = newLanguage.split('-')[0];
-                }
+                newLanguage = (navigator.language || navigator.userLanguage || 'en').substring(0, 2);
             }
 
             // if language is already used skip update
@@ -3667,7 +3649,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
          */
         function changeBurnAfterReading()
         {
-            if (me.getBurnAfterReading()) {
+            if ($burnAfterReading.is(':checked')) {
                 $openDiscussionOption.addClass('buttondisabled');
                 $openDiscussion.prop('checked', false);
 
@@ -3687,7 +3669,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
          */
         function changeOpenDiscussion()
         {
-            if (me.getOpenDiscussion()) {
+            if ($openDiscussion.is(':checked')) {
                 $burnAfterReadingOption.addClass('buttondisabled');
                 $burnAfterReading.prop('checked', false);
 
@@ -4337,7 +4319,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
          */
         me.getBurnAfterReading = function()
         {
-            return $burnAfterReading.prop('checked');
+            return $burnAfterReading.is(':checked');
         };
 
         /**
@@ -4349,7 +4331,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
          */
         me.getOpenDiscussion = function()
         {
-            return $openDiscussion.prop('checked');
+            return $openDiscussion.is(':checked');
         };
 
         /**
